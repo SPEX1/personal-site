@@ -1,12 +1,25 @@
-import { Component, signal } from '@angular/core';
+import {Component, OnInit, signal, inject} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Navbar } from './navbar/navbar';
+import { Landing } from './landing/landing';
+import { InfoBox } from './info-box/info-box';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    Navbar,
+    Landing,
+    InfoBox,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('personal');
+export class App implements OnInit {
+
+  private viewport = inject(ViewportScroller);
+
+  ngOnInit() {
+    this.viewport.scrollToPosition([0, 0]);
+  }
 }

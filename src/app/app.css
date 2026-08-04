@@ -1,0 +1,16 @@
+#page{
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto auto auto;
+}
+
+#landing{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#infoBox{
+  grid-column: 1;
+  grid-row: 2;
+}
