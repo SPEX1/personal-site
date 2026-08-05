@@ -1,5 +1,6 @@
 #page{
   margin-top: 10vh;
+  margin-bottom: 12vh;
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows:auto auto auto;
@@ -14,4 +15,6 @@
   grid-column: 1;
   grid-row: 2;
 }
+
+
 
