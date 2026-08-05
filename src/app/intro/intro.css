@@ -1,0 +1,42 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p{
+  margin-top: 1vh;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  max-width: 500px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+#title{
+  margin-top: 5vh;
+
+  text-align: center;
+  color: white;
+
+  font-size: 2rem;
+
+  transition: 0.3s;
+}
+
+@media(max-width: 595px) {
+  #title {
+    font-size: 1.8rem;
+  }
+
+  p{
+    max-width: 400px;
+  }
+}

@@ -41,6 +41,13 @@
   transition: 0.5s;
 }
 
+@media(max-width: 530px) {
+  .infoBox{
+    width: 300px;
+  }
+
+}
+
 .infoBox:hover{
   background: rgba(255, 255, 255, 0.3);
 }
