@@ -20,3 +20,13 @@ app-info-box{
   grid-column: 1;
   grid-row: 2;
 }
+
+app-imprint{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+app-contact{
+  grid-column: 1;
+  grid-row: 2;
+}

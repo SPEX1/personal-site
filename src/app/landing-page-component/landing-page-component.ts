@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnInit, inject} from '@angular/core';
 import { Landing } from '../landing/landing';
 import { InfoBox } from '../info-box/info-box';
 import { Intro } from '../intro/intro';
+import {ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-landing-page-component',
@@ -17,4 +18,11 @@ import { Intro } from '../intro/intro';
   `,
   styleUrl: './landing-page-component.css',
 })
-export class LandingPageComponent {}
+export class LandingPageComponent implements OnInit {
+
+  private viewport = inject(ViewportScroller);
+
+  ngOnInit() {
+    this.viewport.scrollToPosition([0, 0]);
+  }
+}

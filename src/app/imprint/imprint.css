@@ -1,0 +1,29 @@
+#container{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+  animation: 1s onLoad;
+}
+
+#box{
+  width: 500px;
+  height: 500px;
+
+  background: #111;
+}
+
+
+@keyframes onLoad{
+  0%{
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
