@@ -8,21 +8,15 @@ html {
   padding-bottom: 12vh;
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows:auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
-#landing{
+app-landing{
   grid-column: 1;
   grid-row: 1;
 }
 
-#infoBox{
+app-info-box{
   grid-column: 1;
   grid-row: 2;
 }
-
-#intro{
-  grid-column: 1;
-  grid-row: 3;
-}
-
