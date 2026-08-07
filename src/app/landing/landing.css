@@ -31,6 +31,12 @@
   }
 }
 
+@media(max-width: 474px) {
+  #container {
+    font-size: clamp(0.8rem, 1rem, 1rem);
+  }
+}
+
 h1, h2{
   font-weight: 900;
 

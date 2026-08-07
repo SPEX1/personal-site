@@ -22,7 +22,6 @@
   min-height: 300px;
 
   width: 500px;
-  min-width: 400px;
 
   background: rgba(255, 255, 255, 0.23);
   border-radius: 16px;
@@ -43,9 +42,9 @@
 
 @media(max-width: 530px) {
   .infoBox{
-    width: 300px;
+    width: 80%;
+    height: fit-content;
   }
-
 }
 
 .infoBox:hover{
@@ -131,6 +130,7 @@ a:visited {
 @media (max-width: 1600px){
   #container{
     flex-direction: column;
+    column
   }
 }
 

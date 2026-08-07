@@ -2,28 +2,52 @@
   width: 100%;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   transition: 0.5s;
-  animation: 1s onLoad;
+  animation: 0.5s onLoad;
 }
 
 #box{
-  width: 500px;
-  height: 500px;
+  width: 80%;
+  height: max-content;
 
-  background: #111;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+
+  transition: 0.3s;
+  animation: 1s onLoad;
 }
 
 
 @keyframes onLoad{
   0%{
-    transform: translateY(-20%);
+    transform: translateY(-5%);
     opacity: 0;
   }
   100%{
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@media(max-width: 800px){
+  #box{
+    width: 95%;
+  }
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+p{
+  margin: 1.5rem;
 }
