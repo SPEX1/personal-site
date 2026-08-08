@@ -1,0 +1,46 @@
+.box{
+  height: 500px;
+  min-height: 300px;
+
+  width: 500px;
+
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+
+  animation: 1s 1 onLoad;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  transition: 0.5s;
+
+  margin: 0;
+  padding: 0;
+}
+
+#containerTop{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-template-rows:auto auto;
+}
+
+#topTitle{
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#topOne{
+  grid-column: 1;
+  grid-row: 2;
+}
