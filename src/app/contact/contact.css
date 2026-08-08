@@ -22,6 +22,19 @@
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   padding: 2vh;
+
+  animation: onLoad 1s;
+}
+
+@keyframes onLoad{
+  0%{
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #top{
@@ -52,6 +65,61 @@ h2{
   align-items: center;
 
   gap: 2rem;
+}
+
+.mail {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('../icons/mail.svg') no-repeat center / contain;
+  filter: invert(1);
+}
+
+.discord {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('../icons/discord.svg') no-repeat center / contain;
+  filter: invert(1);
+}
+
+.button {
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+
+  padding: 1rem;
+
+  border-radius: 16px;
+
+  transition: 0.3s;
+
+}
+
+.button:hover {
+  scale: 1.02;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+a{
+  margin-top: auto;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
 
 

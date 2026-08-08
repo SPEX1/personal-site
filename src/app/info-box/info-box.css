@@ -130,7 +130,6 @@ a:visited {
 @media (max-width: 1600px){
   #container{
     flex-direction: column;
-    column
   }
 }
 
