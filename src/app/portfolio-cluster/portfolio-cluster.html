@@ -1,7 +1,7 @@
 <main>
   <h1>Portfolio</h1>
   <div id="containerTop">
-    <h2 class="topTitle">Projects</h2>
+    <h2 class="normalTitle">Projects</h2>
     <div id="infoTable">
       <div class="infoDiv">
         <p>Finished</p>
@@ -18,17 +18,17 @@
     </div>
     <div id="boxTop">
       <div class="box" id="topOne">
-        <h2 class="topTitle" id="topOneTitle">Flashy</h2>
+        <h2 class="boxTitle">Flashy</h2>
         <div id="topImgCluster">
-          <img src="/img/flashysitepreview.png" alt="flashy screenshot" class="img">
-          <img src="/img/flashysitepreview.png" alt="flashy screenshot" class="img">
+          <img src="/img/flashysitepreview.png" alt="flashy screenshot" class="img" id="imgZoom">
+          <img src="/img/flashysitepreviewzoomed.png" alt="flashy screenshot" class="img" id="imgZoom">
         </div>
-        <div id="topOneText">
+        <div class="topOneText">
           <h2 class="topSubTitle">Description</h2>
           <p>Flashy is my first ever project. I made it because I had to transition quickly from learning the basics in theory to applying what I learned in real projects. When you look closely into the repository, you will find a lot of "&#64;ts-ignore".</p>
           <p>It features the ability to create and save cards, it taught me a lot about saving stuff into the browser cache or into files. While that helped me a lot, the most notable thing was running into real problems which taught me more than just working after a strict workflow.</p>
         </div>
-        <div id="topOneButtons">
+        <div class="BoxButtons">
 
           <a href="https://github.com/SPEX1/flashcard-study-app" target="_blank" rel="noopener noreferrer"><div class="button">
             <span>Repository</span>
@@ -43,12 +43,33 @@
         </div>
       </div>
       <div class="box" id="topTwo">
-        <p>test</p>
+        <h2 class="boxTitle">MC status frontend</h2>
+        <div id="topImgCluster">
+          <img src="/img/mcstatsitepreviewzoomed.png" alt="mcstat screenshot" class="img" id="imgBroad">
+        </div>
+        <div class="topOneText">
+          <h2 class="topSubTitle">Description</h2>
+          <p>I build this project after finishing flashy. It used to become a little weather app, but I decided against it since I disliked the way free weather APIS gave data. This is why I landed on mcsrvstat.</p>
+          <p>It features the ability to name a server which is then passed to the mcsrvstat API. It then presents the data similar to the real in game server list of minecraft. It can be integrated into other sites if they want to show off their live server stats.</p>
+        </div>
+        <div class="BoxButtons">
+
+          <a href="https://github.com/SPEX1/minecraftstatusfrontend" target="_blank" rel="noopener noreferrer"><div class="button">
+            <span>Repository</span>
+            <span class="gitHub"></span>
+          </div></a>
+
+          <a href="https://mcstat.twohandz.de" target="_blank" rel="noopener noreferrer"><div class="button">
+            <span>Live Preview</span>
+            <span class="link"></span>
+          </div></a>
+
+        </div>
       </div>
     </div>
   </div>
   <div id="containerBottom">
-    <h2>Tools</h2>
+    <h2 class="normalTitle">Tools</h2>
     <div class="box">
       <p>test</p>
     </div>

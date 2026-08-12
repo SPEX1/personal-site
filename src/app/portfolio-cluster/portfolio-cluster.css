@@ -82,8 +82,12 @@
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
-.box:hover{
-  background: rgba(255, 255, 255, 0.3);
+#topOne:hover{
+  background: rgba(7, 255, 102, 0.3);
+}
+
+#topTwo:hover{
+  background: rgba(7, 255, 102, 0.3);
 }
 
 #containerTop{
@@ -93,16 +97,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.topTitle{
-
-  text-align: center;
-  color: white;
-  font-size: 3.5rem;
-
-  margin: 0;
-  padding-bottom: 2rem;
 }
 
 .topSubTitle{
@@ -131,11 +125,33 @@
   border: 1px solid rgba(7, 255, 102, 0.3);
 }
 
-#topOneTitle{
+#topTwo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+
+  background: rgba(7, 255, 102, 0.2);
+  border: 1px solid rgba(7, 255, 102, 0.3);
+}
+
+.boxTitle{
   grid-column: 1 / 3;
   grid-row: 1;
   align-self: flex-start;
+
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+
+  margin: 0;
+  padding-bottom: 2rem;
   padding-top: 1.5rem;
+}
+
+.normalTitle{
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
 }
 
 h1{
@@ -143,7 +159,7 @@ h1{
   font-size: 6rem;
   text-align: center;
   margin: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .img{
@@ -156,6 +172,16 @@ h1{
   padding: 0;
 }
 
+#imgBroad{
+  width: 700px;
+}
+
+#imgBroad:active{
+  scale: 1.1;
+  animation: none;
+  cursor: default;
+}
+
 .img:hover{
   transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.52);
@@ -164,7 +190,7 @@ h1{
   cursor: pointer;
 }
 
-.img:active{
+#imgZoom:active{
   transform: scale(2.1);
   animation: none;
   cursor: default;
@@ -181,7 +207,7 @@ h1{
   gap: 2rem;
 }
 
-#topOneText{
+.topOneText{
   margin-top: 1.5rem;
   text-align: center;
   grid-column: 1 / 3;
@@ -196,7 +222,7 @@ p{
   text-align: left;
 }
 
-#topOneButtons{
+.BoxButtons{
   grid-column: 1 / 3;
   grid-row: 4;
 
