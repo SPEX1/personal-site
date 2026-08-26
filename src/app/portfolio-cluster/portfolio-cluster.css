@@ -116,6 +116,13 @@
   gap: 3rem;
 }
 
+@media(max-width: 1800px) {
+  #boxTop{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 #topOne{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -164,7 +171,7 @@ h1{
 
 .img{
   width: 300px;
-  height: 150px;
+  height: auto;
   transition: 0.1s ease;
   border-radius: 10px;
 
@@ -174,6 +181,7 @@ h1{
 
 #imgBroad{
   width: 700px;
+  height: auto;
 }
 
 #imgBroad:active{
