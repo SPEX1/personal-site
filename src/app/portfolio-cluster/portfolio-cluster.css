@@ -1,3 +1,11 @@
+h1{
+  animation: 0.5s 1 onLoad;
+}
+
+h2{
+  animation: 1s 1 onLoad;
+}
+
 .box{
   height: fit-content;
   width: 900px;
@@ -91,6 +99,15 @@
 }
 
 #containerTop{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#containerBottom{
   width: 100%;
 
   display: flex;
@@ -328,4 +345,14 @@ a:visited {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+#bottomOne{
+  width: fit-content;
+}
+
+#errorImg{
+  height: 200px;
+  width: auto;
+  padding: 20px;
 }
