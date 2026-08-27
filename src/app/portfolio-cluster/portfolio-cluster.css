@@ -98,6 +98,14 @@ h2{
   background: rgba(7, 255, 102, 0.3);
 }
 
+#topThree:hover{
+  background: rgba(255, 243, 0, 0.3);
+}
+
+#bottomOne:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+
 #containerTop{
   width: 100%;
 
@@ -143,7 +151,7 @@ h2{
 #topOne{
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 
   background: rgba(7, 255, 102, 0.2);
   border: 1px solid rgba(7, 255, 102, 0.3);
@@ -152,10 +160,19 @@ h2{
 #topTwo{
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 
   background: rgba(7, 255, 102, 0.2);
   border: 1px solid rgba(7, 255, 102, 0.3);
+}
+
+#topThree{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+
+  background: rgba(255, 243, 0, 0.2);
+  border: 1px solid rgba(255, 243, 0, 0.3);
 }
 
 .boxTitle{
@@ -194,6 +211,21 @@ h1{
 
   margin: 0;
   padding: 0;
+}
+
+#topIcons{
+  grid-column: 1 / 4;
+  grid-row: 5;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  padding: 1rem;
 }
 
 #imgBroad{
@@ -328,12 +360,51 @@ a:visited {
   background: url('../icons/github.svg') no-repeat center / contain;
 }
 
+.angular {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('../icons/angular.svg') no-repeat center / contain;
+  transition: 0.5s;
+}
+
+.html {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('../icons/html.svg') no-repeat center / contain;
+  transition: 0.5s;
+}
+
+.css {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('../icons/css.svg') no-repeat center / contain;
+  transition: 0.5s;
+}
+
+.typescript {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('../icons/typescript.svg') no-repeat center / contain;
+  transition: 0.5s;
+}
+
 .link {
   display: inline-block;
   width: 30px;
   height: 30px;
   background: url('../icons/link.svg') no-repeat center / contain;
   filter: invert(1);
+}
+
+
+
+#hoverIcon:hover {
+  transform: scale(1.05);
+  rotate: 10deg;
 }
 
 @keyframes onLoad{
