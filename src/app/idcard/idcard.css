@@ -1,0 +1,48 @@
+#cardContainer{
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin-top: 600px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.walletLayer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#back{
+  z-index: 1;
+}
+
+#front{
+  z-index: 30;
+}
+
+#card{
+  z-index: 20;
+  position: absolute;
+
+
+  width: 670px;
+  height: auto;
+
+  bottom: 10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  transform-origin: bottom center;
+  transition: transform .35s ease-out;
+}
+
+#cardContainer:hover #card {
+  transform: translate(-50%, -300px);
+}
+
