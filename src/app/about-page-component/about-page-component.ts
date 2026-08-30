@@ -1,14 +1,14 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { Contact } from '../contact/contact';
+import { Abouttext } from '../abouttext/abouttext';
 import { Idcard } from '../idcard/idcard';
 import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-about-page-component',
-  imports: [Contact, Idcard],
+  imports: [Idcard, Abouttext],
   template: `
+    <app-abouttext></app-abouttext>
     <app-idcard></app-idcard>
-    <app-contact></app-contact>
   `,
   styleUrl: './about-page-component.css',
 })
