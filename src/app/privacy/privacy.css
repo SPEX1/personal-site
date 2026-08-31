@@ -51,4 +51,37 @@ h1{
 
 p{
   margin: 1.5rem;
+  color: white;
+}
+
+.subTitle{
+  color: white;
+  padding-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.paragraph{
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.thick{
+  font-weight: bold;
+}
+
+#controller{
+  list-style: disc;
+  color: lightgray;
+}
+
+#logs{
+  list-style: disc;
+  color: lightgray;
 }
